@@ -1,6 +1,8 @@
 # A protocol to extract the Core Genome
 
-Hi! Here is a protocol I developed for extracting the core genome from a group of genomes, based on the protein names. This protocol uses:
+Hi there! 
+
+I introduce a protocol I developed to extract the core genome from a group of genomes, based on the protein names. This protocol uses:
 
 1- Proteinortho (https://gitlab.com/paulklemm_PHD/proteinortho)
 
