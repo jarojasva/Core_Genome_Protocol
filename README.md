@@ -41,7 +41,7 @@ python 1_extract_protein_names.py proteome_file.faa  codes_file.txt list_protein
 
 1- Put in the same directory your .faa files, the late generated list_protein_names.txt and the *2_extract_core_genome* script
 
-2- Run the *0_extract_codes* script to extract the core genome of each isolate and to obtain the concatenated core genome fasta file
+2- Run the *2_extract_core_genome* script to extract the core genome of each isolate and to obtain the concatenated core genome fasta file
 ```sh
 ./2_extract_core_genome.sh
 ```
