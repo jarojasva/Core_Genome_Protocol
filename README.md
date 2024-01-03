@@ -20,7 +20,7 @@ The culmination of this protocol is a concatenated amino acid FASTA file (*conca
 
 2- Annotate your genome(s) using your preferred annotation software and save the resulting .faa file(s) in a designated directory
 
-3- Execute Proteinortho, comparing your .faa file(s). 
+3- Execute Proteinortho, comparing your .faa file(s)
 ```sh
 proteinortho Directory_with_proteomes/*.faa -identity=50 -project=output_proteinortho
 ```
@@ -30,7 +30,7 @@ proteinortho Directory_with_proteomes/*.faa -identity=50 -project=output_protein
 ```sh
 python 0_extract_codes.py output_proteinortho.tsv
 ```
-**Note**: Define your core genome, protein families contained in 100% (https://doi.org/110.1128/AEM.02411-13) or 95% of your genomes (https://doi.org/10.1038/s41467-023-43802-1), changing the percentage in line X. Default value 95%
+**Note**: Define your core genome, protein families contained in 100% (https://doi.org/110.1128/AEM.02411-13) or 95% of your isolates (https://doi.org/10.1038/s41467-023-43802-1), changing the percentage in line X. Default value 95%
 
 5- Run the *1_extract_protein_names* script to extract the protein names of the core genome (the generated list_protein_names.txt), using the .faa file and the codes_file.txt as input
 ```sh
