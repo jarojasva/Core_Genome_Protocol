@@ -8,7 +8,7 @@ Hi! Here is a protocol I developed for extracting the core genome from a group o
 
 3- Bash scripts
 
-At the end, the concatenated amino acid fasta of the core genome will be obtained to then align (e.g. MAFFT) and perform your phylogenetic analyses.
+At the end, the concatenated amino acid fasta file (*concatenated_core_genomes.faa*) of the core genome will be obtained to then align (e.g. MAFFT) and perform your phylogenetic analyses.
 
 ## Protocol
 
