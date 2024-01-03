@@ -3,7 +3,9 @@
 Hi! Here is a protocol I developed for extracting the core genome from a group of genomes, based on the protein names. This protocol uses:
 
 1- Proteinortho (https://gitlab.com/paulklemm_PHD/proteinortho)
+
 2- Python scripts
+
 3- Bash scripts
 
 At the end, the concatenated amino acid fasta of the core genome will be obtained to then align (e.g. MAFFT) and perform your phylogenetic analyses.
