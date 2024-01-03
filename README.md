@@ -16,19 +16,19 @@ At the end, the concatenated amino acid fasta of the core genome will be obtaine
 
 2- Annotate your genome(s) using your preferred annotation software and save the resulting .faa file(s) in a designated directory
 
-3- Execute Proteinortho, comparing your .faa file(s). Change the identity percentage if you want a more relaxed (<50) or stricter (>75) analysis
+3- Execute Proteinortho, comparing your .faa file(s). 
 ```sh
 proteinortho Directory_with_proteomes/*.faa -identity=50 -project=output_proteinortho
 ```
-4- Define your core genome, protein families contained in 100% (https://doi.org/110.1128/AEM.02411-13) or 95% of your genomes (https://doi.org/10.1038/s41467-023-43802-1).
+Note: Change the identity percentage if you want a more relaxed (<50) or stricter (>75) analysis
 
-5- Run the *0_extract_codes* script to extract the protein codes from the first isolate (column 4) in your output_proteinortho.tsv file
+4- Run the *0_extract_codes* script to extract the protein codes from the first isolate (column 4) in your output_proteinortho.tsv file
 ```sh
-python 0_extract_codes.py
+python 0_extract_codes.py output_proteinortho.tsv
 ```
-6- Place the generated codes_file.txt file and the .faa file of the first isolate (column 4) in the same directory as your output_proteinortho.tsv file
+Note: Define your core genome, protein families contained in 100% (https://doi.org/110.1128/AEM.02411-13) or 95% of your genomes (https://doi.org/10.1038/s41467-023-43802-1), changing the percentage in line X. Default value 95%.
 
-7- Run the *1_extract_protein_names* script to extract the protein names of the core genome (list_protein_names.txt), using the .faa file and the codes_file.txt as input
+5- Run the *1_extract_protein_names* script to extract the protein names of the core genome (the generated list_protein_names.txt), using the .faa file and the codes_file.txt as input
 ```sh
 python 1_extract_protein_names.py proteome_file.faa  codes_file.txt list_protein_names.txt
 ```
