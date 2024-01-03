@@ -2,15 +2,15 @@
 
 Hi there! 
 
-I introduce a protocol I developed to extract the core genome from a group of genomes, based on the protein names. This protocol uses:
+I share with you a protocol I've developed for extracting the core genome from a set of genomes, using protein names as a key identifier. This approach uses:
 
 1- Proteinortho (https://gitlab.com/paulklemm_PHD/proteinortho)
 
-2- Python scripts
+2- Python
 
-3- Bash scripts
+3- Bash
 
-At the end, the concatenated amino acid fasta file (*concatenated_core_genomes.faa*) of the core genome will be obtained to then align (e.g. MAFFT) and perform your phylogenetic analyses.
+The culmination of this protocol is a concatenated amino acid FASTA file (*concatenated_core_genomes.faa*) containing the core genome. This file can be used for downstream analyses, such as alignment and phylogenetic inference.
 
 ## Protocol
 
