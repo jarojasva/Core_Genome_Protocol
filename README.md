@@ -20,7 +20,7 @@ At the end, the concatenated amino acid fasta of the core genome will be obtaine
 ```sh
 proteinortho Directory_with_proteomes/*.faa -identity=50 -project=output_proteinortho
 ```
-**Note**: Change the identity percentage if you want a more relaxed (<50) or stricter (>75) analysis
+**Note**: Change the identity percentage if you want a more relaxed (<50) or stricter (>50) analysis
 
 4- Run the *0_extract_codes* script to extract the protein codes from the first isolate (column 4) in your output_proteinortho.tsv file
 ```sh
