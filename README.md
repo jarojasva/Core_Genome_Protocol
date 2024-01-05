@@ -1,14 +1,16 @@
-# A protocol to extract the Core Proteome
+# A protocol to extract the *in silico* Core Proteome
 
 Hi there! 
 
 I share with you a protocol I've developed for extracting the core proteome from a set of genomes. This approach uses:
 
-1- Proteinortho (https://gitlab.com/paulklemm_PHD/proteinortho)
+1- Your preferred annotation software
 
-2- Python
+2- Proteinortho (https://gitlab.com/paulklemm_PHD/proteinortho)
 
-3- Bash
+3- Python
+
+4- Bash
 
 The culmination of this protocol is a concatenated amino acid FASTA file (*concatenated_core_proteome.faa*) containing the core proteome. This file can be used for downstream analyses, such as alignment and phylogenetic inference.
 
@@ -52,7 +54,7 @@ python 1_extract_codes_files.py 95
 
 1- Download the *files* directory. It contains an output_proteinortho.tsv and ten proteome files (.faa)
 
-2. Extract the codes of the proteins contained in 100% of proteomes:
+2- Extract the codes of the proteins contained in 100% of proteomes:
 ```sh
 python 1_extract_codes_files.py 100
 ```
