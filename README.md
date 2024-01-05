@@ -1,7 +1,5 @@
 # A protocol to extract the Core Proteome
 
-## UNDER CONSTRUCTION !
-
 Hi there! 
 
 I share with you a protocol I've developed for extracting the core proteome from a set of genomes. This approach uses:
@@ -12,7 +10,7 @@ I share with you a protocol I've developed for extracting the core proteome from
 
 3- Bash
 
-The culmination of this protocol is a concatenated amino acid FASTA file (*concatenated_core_genomes.faa*) containing the core proteome. This file can be used for downstream analyses, such as alignment and phylogenetic inference.
+The culmination of this protocol is a concatenated amino acid FASTA file (*concatenated_core_proteome.faa*) containing the core proteome. This file can be used for downstream analyses, such as alignment and phylogenetic inference.
 
 ## Protocol
 
@@ -35,9 +33,9 @@ proteinortho Directory_with_proteomes/*.faa -identity=50 -project=output_protein
 python 1_extract_codes_files.py core
 ```
 **Note**: Define your core value (the percentage of proteomes that will be part of the core proteome). It must be a value between [0-100]. The traditional "core-genome" is defined as the contained in 100% (core value 100) (https://doi.org/110.1128/AEM.02411-13) or 95% of your isolates (core value 95) (https://doi.org/10.1038/s41467-023-43802-1)
-e.x. If you want to obtain the proteins contained in 100% of your isolates, then run:
+f.i. If you want to obtain the proteins contained in 95% of your isolates, then run:
 ```sh
-python 1_extract_codes_files.py 100
+python 1_extract_codes_files.py 95
 ```
 
 ### Part 2 - Extract the core proteome
@@ -48,4 +46,19 @@ python 1_extract_codes_files.py 100
 ```sh
 ./2_extract_core_proteome.sh
 ```
-3- Enjoy your core genome files
+3- Enjoy your core proteome files
+
+## Example trial
+
+1- Download the *files* directory. It contains an output_proteinortho.tsv and ten proteome files (.faa)
+
+2. Extract the codes of the proteins contained in 100% of proteomes:
+```sh
+python 1_extract_codes_files.py 100
+```
+3. Extract the core proteome files:
+```sh
+./2_extract_core_proteome.sh
+```
+
+
