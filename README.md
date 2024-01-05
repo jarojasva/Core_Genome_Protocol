@@ -34,7 +34,11 @@ proteinortho Directory_with_proteomes/*.faa -identity=50 -project=output_protein
 ```sh
 python 1_extract_codes_files.py core
 ```
-**Note**: Define your core value (the percentage of proteomes that will be part of the core proteome). It must be a value between [0-100]. The traditional "core-genome" is defined as the contained in 100% (https://doi.org/110.1128/AEM.02411-13) or 95% of your isolates (https://doi.org/10.1038/s41467-023-43802-1)
+**Note**: Define your core value (the percentage of proteomes that will be part of the core proteome). It must be a value between [0-100]. The traditional "core-genome" is defined as the contained in 100% (core value 100) (https://doi.org/110.1128/AEM.02411-13) or 95% of your isolates (core value 95) (https://doi.org/10.1038/s41467-023-43802-1)
+e.x. If you want to obtain the core proteome in 100% of your isolates, then run:
+```sh
+python 1_extract_codes_files.py 100
+```
 
 ### Part 2 - Extract the core proteome
 
