@@ -62,5 +62,8 @@ python 1_extract_codes_files.py 100
 ```sh
 ./2_extract_core_proteome.sh
 ```
-
+```sh
+blastn -db [viralDB].fasta -query [your_viral_sequences].fa -num_alignments 20 -num_descriptions 20 -evalue 0.0001 -word_size 11 -out output_blast_virus.txt
+![image](https://github.com/jarojasva/In_Silico_Core_Proteome/assets/73260746/b1298d7a-f89f-4c3c-a7bf-8edbff97805c)
+```
 
