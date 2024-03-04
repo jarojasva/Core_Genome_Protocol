@@ -26,7 +26,8 @@ The culmination of this protocol is a concatenated amino acid FASTA file (*conca
 ```sh
 proteinortho Directory_with_proteomes/*.faa -identity=50 -project=output_proteinortho
 ```
-**Note**: Change the identity percentage if you want a more relaxed (<50) or stricter (>50) analysis
+> [!NOTE]
+> Change the identity percentage if you want a more relaxed (<50) or stricter (>50) analysis
 
 4- Put in the same directory the *1_extract_codes_files.py* script and your output_proteinortho.tsv file
 
@@ -34,7 +35,8 @@ proteinortho Directory_with_proteomes/*.faa -identity=50 -project=output_protein
 ```sh
 python 1_extract_codes_files.py <proteinortho_file> <core>
 ```
-**Note**: Define your core value (the percentage of genomes that will be part of the core genome). It must be a value between [0-100]. The traditional "core-genome" is defined as the contained in 100% (core value 100) (https://doi.org/110.1128/AEM.02411-13) or 95% of your isolates (core value 95) (https://doi.org/10.1038/s41467-023-43802-1)
+> [!NOTE]
+>Define your core value (the percentage of genomes that will be part of the core genome). It must be a value between [0-100]. The traditional "core-genome" is defined as the contained in 100% (core value 100) (https://doi.org/110.1128/AEM.02411-13) or 95% of your isolates (core value 95) (https://doi.org/10.1038/s41467-023-43802-1)
 f.i. If you want to obtain the proteins contained in 95% of your isolates, then run:
 ```sh
 python 1_extract_codes_files.py <proteinortho_file> 95
