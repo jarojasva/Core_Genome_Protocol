@@ -1,8 +1,8 @@
-# A protocol to extract the Core Genome (only single copy genes)
+# A protocol to extract the Core Genome (only single copy orthologs)
 
 Hi there! 
 
-I share with you a protocol I've developed for extracting the core genome (only single copy genes) from a set of genomes. This approach uses:
+I share with you a protocol I've developed for extracting the core genome (only single copy orthologs) from a set of genomes. This approach uses:
 
 1- Your preferred annotation software
 
@@ -12,7 +12,7 @@ I share with you a protocol I've developed for extracting the core genome (only 
 
 4- Bash
 
-The culmination of this protocol is a concatenated amino acid FASTA file (*concatenated_core_genome.faa*) containing the core genome (only single copy genes). This file can be used for downstream analyses, such as alignment and phylogenetic inference.
+The culmination of this protocol is a concatenated amino acid FASTA file (*concatenated_core_genome.faa*) containing the core genome (only single copy orthologs). This file can be used for downstream analyses, such as alignment and phylogenetic inference.
 
 ## Protocol
 
@@ -39,7 +39,7 @@ f.i. If you want to obtain the proteins contained in 95% of your isolates, then 
 ```sh
 python 1_extract_codes_files.py <proteinortho_file> 95
 ```
-:warning: **The current script only extract the single copy genes codes of the core genome with core=100** :warning: 
+:warning: **The current script only extract the single copy orthologs codes of the core genome with core=100** :warning: 
 
 ### Part 2 - Extract the core proteome
 
