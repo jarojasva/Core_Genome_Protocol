@@ -39,7 +39,7 @@ f.i. If you want to obtain the proteins contained in 95% of your isolates, then 
 ```sh
 python 1_extract_codes_files.py <proteinortho_file> 95
 ```
-The current script only extract the single copy genes codes of the core genome with core=100
+:warning: **The current script only extract the single copy genes codes of the core genome with core=100** :warning: 
 
 ### Part 2 - Extract the core proteome
 
