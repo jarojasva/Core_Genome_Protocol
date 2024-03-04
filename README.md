@@ -1,4 +1,4 @@
-# A protocol to extract the Core Genome (only single copy orthologs)
+# A protocol to extract the Core-Genome (only single copy orthologs)
 
 Hi there! 
 
