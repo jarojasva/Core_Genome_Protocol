@@ -57,7 +57,7 @@ python 1_extract_codes_files.py <proteinortho_file> 95
 
 2- Extract the codes of the proteins contained in 100% of proteomes:
 ```sh
-python 1_extract_codes_files.py 100
+python 1_extract_codes_files.py output_proteinortho.tsv 100
 ```
 3. Extract the core genome files:
 ```sh
