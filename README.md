@@ -1,8 +1,8 @@
-# A protocol to extract the *in silico* Core Proteome
+# A protocol to extract the Core Genome
 
 Hi there! 
 
-I share with you a protocol I've developed for extracting the core proteome from a set of genomes. This approach uses:
+I share with you a protocol I've developed for extracting the core genome (only single copy genes) from a set of genomes. This approach uses:
 
 1- Your preferred annotation software
 
@@ -12,7 +12,7 @@ I share with you a protocol I've developed for extracting the core proteome from
 
 4- Bash
 
-The culmination of this protocol is a concatenated amino acid FASTA file (*concatenated_core_proteome.faa*) containing the core proteome. This file can be used for downstream analyses, such as alignment and phylogenetic inference.
+The culmination of this protocol is a concatenated amino acid FASTA file (*concatenated_core_genome.faa*) containing the core genome. This file can be used for downstream analyses, such as alignment and phylogenetic inference.
 
 ## Protocol
 
@@ -34,7 +34,7 @@ proteinortho Directory_with_proteomes/*.faa -identity=50 -project=output_protein
 ```sh
 python 1_extract_codes_files.py core
 ```
-**Note**: Define your core value (the percentage of proteomes that will be part of the core proteome). It must be a value between [0-100]. The traditional "core-genome" is defined as the contained in 100% (core value 100) (https://doi.org/110.1128/AEM.02411-13) or 95% of your isolates (core value 95) (https://doi.org/10.1038/s41467-023-43802-1)
+**Note**: Define your core value (the percentage of genomes that will be part of the core genome). It must be a value between [0-100]. The traditional "core-genome" is defined as the contained in 100% (core value 100) (https://doi.org/110.1128/AEM.02411-13) or 95% of your isolates (core value 95) (https://doi.org/10.1038/s41467-023-43802-1)
 f.i. If you want to obtain the proteins contained in 95% of your isolates, then run:
 ```sh
 python 1_extract_codes_files.py 95
@@ -42,13 +42,13 @@ python 1_extract_codes_files.py 95
 
 ### Part 2 - Extract the core proteome
 
-1- Put in the same directory your .faa files, the late generated proteome_name_codes.txt files and the *2_extract_core_proteome.sh* script
+1- Put in the same directory your .faa files, the late generated genome_name_codes.txt files and the *2_extract_core_genome.sh* script
 
-2- Run the *2_extract_core_proteome.sh* script to extract the core proteome of each isolate and to obtain the concatenated core proteome fasta file
+2- Run the *2_extract_core_genome.sh* script to extract the core genome of each isolate and to obtain the concatenated core genome fasta file
 ```sh
-./2_extract_core_proteome.sh
+./2_extract_core_genome.sh
 ```
-3- Enjoy your core proteome files
+3- Enjoy your core genome files
 
 ## Example trial
 
@@ -58,8 +58,8 @@ python 1_extract_codes_files.py 95
 ```sh
 python 1_extract_codes_files.py 100
 ```
-3. Extract the core proteome files:
+3. Extract the core genome files:
 ```sh
-./2_extract_core_proteome.sh
+./2_extract_core_genome.sh
 ```
 
