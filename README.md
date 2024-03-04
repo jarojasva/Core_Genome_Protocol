@@ -39,13 +39,13 @@ f.i. If you want to obtain the proteins contained in 95% of your isolates, then 
 ```sh
 python 1_extract_codes_files.py <proteinortho_file> 95
 ```
-:warning: **The current script only extract the single copy orthologs codes of the core genome with core=100** :warning: 
+:warning: **The current script only extract the single copy orthologs codes of the core-genome with core=100** :warning: 
 
 ### Part 2 - Extract the core-genome
 
 1- Put in the same directory your .faa files, the late generated genome_name_codes.txt files and the *2_extract_core_genome.sh* script
 
-2- Run the *2_extract_core_genome.sh* script to extract the core genome of each isolate and to obtain the concatenated core-genome fasta file
+2- Run the *2_extract_core_genome.sh* script to extract the core-genome of each isolate and to obtain the concatenated core-genome fasta file
 ```sh
 ./2_extract_core_genome.sh
 ```
