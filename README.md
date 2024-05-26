@@ -60,7 +60,7 @@ f.i. If you want to obtain the proteins contained in 95% of your isolates, then 
 ```sh
 python 1_extract_codes_files.py output_proteinortho.tsv 100
 ```
-3. Extract the core genome files:
+3- Extract the core genome files:
 ```sh
 ./2_extract_core_genome.sh
 ```
