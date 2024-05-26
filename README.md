@@ -27,7 +27,7 @@ The culmination of this protocol is a concatenated amino acid FASTA file (*conca
 proteinortho Directory_with_proteomes/*.faa -identity=50 -project=output_proteinortho
 ```
 > [!NOTE]
-> Change the identity percentage if you want a more relaxed (<50) or stricter (>50) analysis
+> Change the identity percentage if you want a more relaxed (<50) or stricter (>50) orthology prediction
 
 4- Put in the same directory the *1_extract_codes_files.py* script and your output_proteinortho.tsv file
 
